@@ -35,23 +35,8 @@ public class PatientRecord extends BaseEntity {
   @Convert(converter = GenderEnumConverter.class)
   private Gender gender;
 
-  @Column(name = "zip_code", length = 10, nullable = false)
-  private String zipCode;
-
-  @Column(length = 100)
-  private String address;
-
-  @Column(length = 5)
-  private String number;
-
-  @Column(length = 45)
-  private String complement;
-
-  @Column(length = 45)
-  private String city;
-
-  @Column(length = 2)
-  private String state;
+  @Embedded
+  private Address address;
 
   @Column(length = 45, nullable = false)
   private String occupation;
