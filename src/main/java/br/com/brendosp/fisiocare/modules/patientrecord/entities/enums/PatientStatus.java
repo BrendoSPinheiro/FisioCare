@@ -1,9 +1,12 @@
 package br.com.brendosp.fisiocare.modules.patientrecord.entities.enums;
 
+import lombok.Getter;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
+@Getter
 public enum PatientStatus {
   PENDING("pending"),
   IN_TREATMENT("in_treatment"),
@@ -15,10 +18,6 @@ public enum PatientStatus {
 
   PatientStatus(String value) {
     this.value = value;
-  }
-
-  public String getValue() {
-    return this.value;
   }
 
   private static final Map<String, PatientStatus> PATIENT_STATUS_MAP = new HashMap<>();

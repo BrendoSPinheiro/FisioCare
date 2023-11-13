@@ -1,9 +1,12 @@
 package br.com.brendosp.fisiocare.modules.patientrecord.entities.enums;
 
+import lombok.Getter;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
+@Getter
 public enum Gender {
   MALE("male"),
   FEMALE("female"),
@@ -14,10 +17,6 @@ public enum Gender {
 
   Gender(String value) {
     this.value = value;
-  }
-
-  public String getValue() {
-    return this.value;
   }
 
   private static final Map<String, Gender> GENDER_MAP = new HashMap<>();
