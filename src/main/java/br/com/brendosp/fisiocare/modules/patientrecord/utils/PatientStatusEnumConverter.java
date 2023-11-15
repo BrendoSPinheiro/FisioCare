@@ -5,7 +5,7 @@ import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;
 
 @Converter(autoApply = true)
-public class PatientStatusConverter implements AttributeConverter<PatientStatus, String> {
+public class PatientStatusEnumConverter implements AttributeConverter<PatientStatus, String> {
   @Override
   public String convertToDatabaseColumn(PatientStatus attribute) {
     return attribute != null ? attribute.getValue() : null;

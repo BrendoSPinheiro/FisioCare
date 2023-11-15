@@ -4,7 +4,7 @@ import br.com.brendosp.fisiocare.modules.BaseEntity;
 import br.com.brendosp.fisiocare.modules.patientrecord.entities.enums.Gender;
 import br.com.brendosp.fisiocare.modules.patientrecord.entities.enums.PatientStatus;
 import br.com.brendosp.fisiocare.modules.patientrecord.utils.GenderEnumConverter;
-import br.com.brendosp.fisiocare.modules.patientrecord.utils.PatientStatusConverter;
+import br.com.brendosp.fisiocare.modules.patientrecord.utils.PatientStatusEnumConverter;
 import br.com.brendosp.fisiocare.modules.user.entities.User;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -66,7 +66,7 @@ public class PatientRecord extends BaseEntity {
   private String diagnosis;
 
   @Column(nullable = false)
-  @Convert(converter = PatientStatusConverter.class)
+  @Convert(converter = PatientStatusEnumConverter.class)
   private PatientStatus status;
 
   @Column(nullable = false, unique = true)
