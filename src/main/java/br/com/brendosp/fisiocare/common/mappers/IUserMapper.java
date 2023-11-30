@@ -1,7 +1,7 @@
 package br.com.brendosp.fisiocare.common.mappers;
 
-import br.com.brendosp.fisiocare.infra.http.dtos.CreateUserRequestDto;
-import br.com.brendosp.fisiocare.infra.http.dtos.CreateUserResponseDto;
+import br.com.brendosp.fisiocare.infra.http.dtos.request.CreateUserRequestDto;
+import br.com.brendosp.fisiocare.infra.http.dtos.response.CreateUserResponseDto;
 import br.com.brendosp.fisiocare.modules.user.entities.User;
 import org.mapstruct.InjectionStrategy;
 import org.mapstruct.Mapper;

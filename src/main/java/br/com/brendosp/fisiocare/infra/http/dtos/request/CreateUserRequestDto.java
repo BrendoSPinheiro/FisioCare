@@ -1,4 +1,4 @@
-package br.com.brendosp.fisiocare.infra.http.dtos;
+package br.com.brendosp.fisiocare.infra.http.dtos.request;
 
 public record CreateUserRequestDto(
   String name,

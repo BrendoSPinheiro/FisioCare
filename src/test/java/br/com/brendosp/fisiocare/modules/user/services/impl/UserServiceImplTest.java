@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.*;
 
 import br.com.brendosp.fisiocare.common.exceptions.UserException;
 import br.com.brendosp.fisiocare.common.mappers.IUserMapper;
-import br.com.brendosp.fisiocare.infra.http.dtos.CreateUserRequestDto;
+import br.com.brendosp.fisiocare.infra.http.dtos.request.CreateUserRequestDto;
 import br.com.brendosp.fisiocare.modules.user.entities.User;
 import br.com.brendosp.fisiocare.modules.user.repositories.IUserRepository;
 import org.junit.jupiter.api.BeforeEach;
