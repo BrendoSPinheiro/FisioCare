@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="DEBUG">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout>
+                <pattern>
+                    %style{%d{yyyy-MM-dd HH:mm:ss.SSS}}{fg_cyan} %style{[%t]}{fg_magenta} %highlight{%-5level}{
+                        TRACE=fg_blue,
+                        DEBUG=fg_green,
+                        INFO=fg_white,
+                        WARN=fg_yellow,
+                        ERROR=fg_red,
+                        FATAL=fg_bright_red
+                    } %style{[%logger{36}]}{fg_bright_cyan} - %msg%n
+                </pattern>
+            </PatternLayout>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
