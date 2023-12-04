@@ -1,10 +1,10 @@
 package br.com.brendosp.fisiocare.common.exceptions;
 
-public class BaseException extends RuntimeException {
+public abstract class BaseException extends RuntimeException {
 
   private final Integer code;
 
-  public BaseException(String message, Integer code) {
+  protected BaseException(String message, Integer code) {
     super(message);
     this.code = code;
   }
