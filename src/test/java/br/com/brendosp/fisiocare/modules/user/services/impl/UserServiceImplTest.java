@@ -50,7 +50,7 @@ class UserServiceImplTest {
   }
 
   @Test
-  @DisplayName("should create user with valid data and return created user")
+  @DisplayName("Should create user with valid data and return created user")
   void shouldCreateUserWithValidDataAndReturnCreatedUser() {
     when(userRepository.findByUsername(anyString())).thenReturn(Optional.empty());
     when(userRepository.findByEmail(anyString())).thenReturn(Optional.empty());
